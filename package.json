@@ -1,0 +1,34 @@
+{
+  "name": "Fanala",
+  "displayName": "Fanala",
+  "description": "Fanala is a Visual Studio Code extension designed to facilitate real-time pair programming in remote environments. This innovative project aims to enhance the collaborative coding experience by providing tools and features specifically tailored for pair programming scenarios. With Fanala, developers can seamlessly collaborate, share code, and enhance productivity, all within the familiar and powerful Visual Studio Code environment. Enjoy the benefits of simultaneous coding, immediate feedback, and a truly synchronized collaboration process as you elevate your pair programming to the real-time era with Fanala!",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "Fanala.helloWorld",
+      "title": "Hello World"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.86.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
